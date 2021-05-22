@@ -12,7 +12,7 @@ var block_image_object= "";
 
 function player_update()
 {
-	fabric.Image.fromURL("images/10473155-young-volleyball-player-funny-cartoon-and-vector-isolated-character-.jpg", function(Img) {
+	fabric.Image.fromURL("images/Young Girl.jpg", function(Img) {
 	player_object = Img;
 
 	player_object.scaleToWidth(150);
