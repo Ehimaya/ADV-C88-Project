@@ -12,7 +12,7 @@ var block_image_object= "";
 
 function player_update()
 {
-	fabric.Image.fromURL("https://previews.123rf.com/images/ddraw/ddraw1109/ddraw110900003/10473155-young-volleyball-player-funny-cartoon-and-vector-isolated-character-.jpg", function(Img) {
+	fabric.Image.fromURL("Young Girl.png", function(Img) {
 	player_object = Img;
 
 	player_object.scaleToWidth(150);
@@ -54,12 +54,16 @@ console.log(keyPressed);
       console.log("p and shift pressed together");
       block_image_width = block_image_width + 10;
       block_image_height = block_image_height + 10;
+      document.getElementById ("current width").innerHTML = block_image_width;
+      document.getElementById ("current height").innerHTML = block_image_height;
     }
   if (e.shiftKey == true && keyPressed =='77')
     {
       console.log("m and shift pressed together");
       block_image_width = block_image_width - 10;
       block_image_height = block_image_height - 10;
+      document.getElementById ("current width").innerHTML = block_image_width;
+      document.getElementById ("current height").innerHTML = block_image_height;
     }
   if (keyPressed == '38')
    {
@@ -83,27 +87,27 @@ console.log(keyPressed);
    }
   if (keyPressed == '70')
     {
-      new_image ('ironman_face.png');
+      new_image ('images/ironman_face.png');
       console.log ("f");
     }
    if (keyPressed == '66')
     {
-      new_image ('spiderman_body.png');
+      new_image ('images/spiderman_body.png');
       console.log ("b");
     }
    if (keyPressed == '76')
     {
-      new_image ('hulk_leg.png');
+      new_image ('images/hulk_leg.png');
       console.log ("l");
     }
    if (keyPressed == '82')
     {
-      new_image ('thor_right_hand.png');
+      new_image ('images/thor_right_hand.png');
       console.log ("r");
     }
    if (keyPressed == '72')
     {
-      new_image ('captian_america_left_hand.png');
+      new_image ('images/captian_america_left_hand.png');
       console.log ("h");
     }
 }
